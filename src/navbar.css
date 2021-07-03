@@ -1,0 +1,60 @@
+/**
+https://www.w3schools.com/
+*/
+
+#nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#nav-list li {
+    float: left;
+}
+
+#nav-list li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#nav-list li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #38AC30;
+}
+
+#nav-list li.dropdown {
+    display: inline-block;
+}
+
+#nav-list .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#nav-list .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+#nav-list .dropdown-content a:hover {
+    background-color: #f1f1f1 !important;
+}
+
+#nav-list .dropdown:hover .dropdown-content {
+    display: block;
+}
